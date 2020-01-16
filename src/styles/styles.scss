@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+
+$font: "Raleway", sans-serif;
+
+//Colors
+$white: #fff;
+$black: #000;
+$maroon: #801425;
+$off-white: #f2f4f5;
+
+html,
+body {
+  font-family: $font;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  background: $white;
+}
+
+.container {
+  width: 1640px;
+  min-width: 1640px;
+  margin: 0 auto;
+}
+
+//Header
+header {
+  height: 80px;
+  width: 100%;
+  z-index: 10;
+  .inner-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    .logo {
+      a {
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: 1.5px;
+        color: $black;
+      }
+    }
+    .navigation {
+      nav {
+        a {
+          margin: 0 20px;
+          text-decoration: none;
+          letter-spacing: 1.75px;
+          text-transform: uppercase;
+          font-size: 0.75rem;
+          color: $black;
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Banner
+.banner {
+  background-image: linear-gradient(to right, #801425, #50161f);
+
+  .main-image {
+    width: 100vw;
+    object-fit: cover;
+    mix-blend-mode: screen;
+
+    .main-text {
+      font-family: "Dancing Script", cursive;
+      font-size: 8.8rem;
+      letter-spacing: 24px;
+      font-weight: 700;
+      color: $white;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      mix-blend-mode: difference;
+      z-index: 9;
+    }
+  }
+}
+
+//About blurb
+
+.about-blurb {
+  padding: 48px 0;
+  background: $white;
+  position: relative;
+  .inner-blurb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .content {
+      width: 33%;
+      h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        letter-spacing: 1.5px;
+        margin: 0;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: 300;
+        margin: 40px 0 72px;
+      }
+      .btn-row {
+        a {
+          font-weight: 700;
+          font-size: 0.875rem;
+          letter-spacing: 1.5px;
+          color: $black;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
+    }
+    .images {
+      width: 50%;
+      height: 1000px;
+      position: relative;
+      z-index: 7;
+      .top-right {
+        position: absolute;
+        width: 460px;
+        top: 0;
+        right: 0;
+        z-index: 4;
+      }
+      .bottom-left {
+        position: absolute;
+        width: 410px;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+  .black-box {
+    background: $black;
+    height: 418px;
+    width: 836px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    &.overlay {
+      z-index: 7;
+      background: $maroon;
+      mix-blend-mode: overlay;
+    }
+  }
+}
+
+//footer
+footer {
+  .featured-companies {
+    background: $maroon;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    .container {
+      ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+        li {
+          text-align: center;
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    background: $off-white;
+    height: 80px;
+    .inner {
+      padding: 0 120px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .socials {
+        a {
+          margin: 0 8px;
+          img {
+            height: 24px;
+            width: 24px;
+          }
+        }
+      }
+    }
+  }
+}
