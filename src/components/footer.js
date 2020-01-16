@@ -1,25 +1,25 @@
 import React from "react"
 
-//Featured Companies
-import afropunk from "../images/afropunk.png"
-import creativeBoom from "../images/creative-boom.png"
-import vogue from "../images/vogue.png"
-import wgsn from "../images/wgsn.png"
+// //Featured Companies
+// import afropunk from "../images/afropunk.png"
+// import creativeBoom from "../images/creative-boom.png"
+// import vogue from "../images/vogue.png"
+// import wgsn from "../images/wgsn.png"
 
 // Socials
 import facebook from "../images/facebook.png"
 
-const featured = [
-  { name: "CreativeBoom", image: creativeBoom },
-  { name: "Afropunk", image: afropunk },
-  { name: "WGSN", image: wgsn },
-  { name: "Vogue", image: vogue },
-]
+// const featured = [
+//   { name: "CreativeBoom", image: creativeBoom },
+//   { name: "Afropunk", image: afropunk },
+//   { name: "WGSN", image: wgsn },
+//   { name: "Vogue", image: vogue },
+// ]
 
 const Footer = () => {
   return (
     <footer>
-      <div className="featured-companies">
+      {/* <div className="featured-companies">
         <div className="container">
           <ul>
             {featured.map(({ name, image }) => (
@@ -29,7 +29,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-      </div>
+      </div> */}
       <div className="footer">
         <div className="inner">
           <span>© 2019 Tanglez Hair Salon</span>

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Tanglez Hair Salon`,
+    description: `Welcome to the Tanglez Hair Salon website. At Tanglez we pride ourselves in the quality of our work and offer satisfaction guaranteed. Our stylists are fully trained and up to date with all of the latest cut & color techniques, including but not limited to: all over color, color retouch, highlights, shampoo & blow dry, Moroccan hydrating mask treatments, facial waxing, and special occasion up-dos`,
+    author: `Nick Andrews`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Tanglez Hair Salon`,
+        short_name: `tanglez`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,
